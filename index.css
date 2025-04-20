@@ -1,0 +1,126 @@
+/* General Reset and Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.timer {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1em;
+    color: #04AA6D;
+}
+
+.buttons, .mode-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    min-width: 90px;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: #037a4a;
+}
+
+.button2 {
+    background-color: #008CBA; /* Blue */
+}
+
+.button2:hover {
+    background-color: #005f73;
+}
+
+.button3 {
+    background-color: #f44336; /* Red */
+}
+
+.button3:hover {
+    background-color: #ba2c1d;
+}
+
+.button4 {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.button4:hover {
+    background-color: #cfcfcf;
+}
+
+.button5 {
+    background-color: #555555;
+}
+
+.button5:hover {
+    background-color: #333333;
+}
+
+.mode-buttons .button {
+    min-width: 110px;
+}
+
+.mode-buttons .active {
+    box-shadow: 0 0 10px #04AA6D;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .timer {
+        font-size: 2.5rem;
+    }
+    .button, .mode-buttons .button {
+        min-width: 80px;
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+    .container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .timer {
+        font-size: 2rem;
+    }
+    .button, .mode-buttons .button {
+        min-width: 70px;
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+}
